@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Poppins&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+/* custom css for hero component */
+.slick-custom-dots{
+  /* width: auto !important;
+  top: 50%;
+  left: 70%; */
+  bottom: 50px !important;
+}
+.slick-custom-dots li{
+  width: 60px !important; 
+  height: 65px !important; 
+  transition:all 0.5s ease;
+  margin: 0 10px !important;
+}
+.slick-custom-dots .slick-active{
+  transform: scale(1.5);
+}
+.slick-slide.slick-active.slick-current .hero_text{
+  animation: fadeInLeft 0.8s ease!important;
+}
+.slick-slide.slick-active.slick-current .hero-button{
+  animation: fadeInLeft 0.8s ease!important;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.iceCream_hero_Slider .slick-list {
+  padding:25px 0 25px ;
+}
+.slick-slide.slick-active.slick-current .slide-img-main{
+  animation:float 6s ease-in-out infinite, jackInTheBox 1s ease;
+}
+.slide-img {
+  transform: rotate(10deg);
+}
+
+.hero_text{
+    font-size: clamp(50px, 5vw, 70px);
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.74);
+  z-index: 3;
+}
+.strawberry_class{
+  color: #BC0000;
+}
+.chocolate_class{
+  color:rgb(86, 59, 39);
+}
+.yellow_class{
+  color: rgb(255, 174, 0);
+}
+
+/* product details */
+
+.product_img {
+  /* width: 300px;
+  height: 500px; */
+  filter: drop-shadow(1px 1px 3px #a6a6a6);
+}
+
+/* ----- Product Section ----- */
+.product {
+ 
+  margin: auto;
+  /* padding: 2.5em 0; */
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* ----- Photo Section ----- */
+.product__photo {
+  /* position: relative; */
+}
+
+
+.photo-main {
+  border-radius: 6px 6px 0 0;
+  background-color: #9be010;
+  background: radial-gradient(#e5f89e, #96e001);
+}
+.photo-main .controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8em;
+  color: #fff;
+}
+
+.photo-main img {
+  position: absolute;
+  left: -3.5em;
+  top: 2em;
+  max-width: 110%;
+  filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+}
+
+.photo-album {
+  padding: 0.7em 1em;
+  border-radius: 0 0 6px 6px;
+  background-color: #fff;
+}
+.photo-album ul {
+  display: flex;
+  justify-content: space-around;
+}
+.photo-album li {
+  float: left;
+  width: 55px;
+  height: 55px;
+  padding: 7px;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+}
+
+/* ----- Informations Section ----- */
+.product__info {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+.title h1 {
+  margin-bottom: 0.1em;
+  color: #4c4c4c;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.title span {
+  font-size: 0.7em;
+  color: #a6a6a6;
+}
+
+.price {
+  margin: 0.5em 0;
+  color: #ff3f40;
+  font-size: 1.2em;
+}
+.price span {
+  padding-left: 0.15em;
+  font-size: 2.9em;
+}
+
+.variant {
+  overflow: auto;
+}
+.variant h3 {
+  margin-bottom: 1.1em;
+}
+.variant li {
+  float: left;
+  width: 35px;
+  height: 35px;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.variant li:first-child, .variant li:hover {
+  border: 1px solid #a6a6a6;
+}
+.variant li:not(:first-child) {
+  margin-left: 0.1em;
+}
+
+.description {
+  clear: left;
+  margin: 0.5em 0;
+}
+.description h3 {
+  margin-bottom: 1em;
+}
+.description ul {
+  font-size: 0.8em;
+  list-style: disc;
+  margin-left: 1em;
+}
+.description li {
+  text-indent: -0.6em;
+  margin-bottom: 0.5em;
+}
+
+.buy--btn {
+  padding:  10px 30px;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #fff;
+  background-color: #ff3f40;
+  box-shadow: 2px 2px 25px -7px #4c4c4c;
+  cursor: pointer;
+}
+.buy--btn:active {
+  transform: scale(0.97);
+}
+
+@media screen and (max-width:992px) {
+  .product{
+    max-width: 100%;
+  }
+  
+}
+
+/* contact section css  */

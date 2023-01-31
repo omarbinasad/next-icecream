@@ -1,0 +1,28 @@
+.top_flavoure_main{
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+    /* background-color: #BC0000; */
+    margin-top: 50px;
+    
+}
+.heading{
+    font-size: clamp(50px, 5vw, 70px);
+    color:  #BC0000;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.74);
+}
+/* .shap_img{
+    width: 100% !important;
+    height: 100px !important;
+    position: relative ;
+}
+.shap_img img{
+   transform: rotate(180deg);
+}
+.shap_img_bottom{
+    width: 100% !important;
+    height: 100px !important;
+    position: relative ;
+}
+.shap_img_bottom img{
+   transform: rotate(180deg);
+} */

@@ -1,0 +1,28 @@
+.cart_section{
+    padding-top: 150px ;
+    padding-bottom: 50px;
+    min-height: 60vh;
+}
+.cart_total_box{
+    padding: 35px;
+    background-color: rgb(46, 40, 36);
+    color: white;
+}
+.image_container{
+    position:relative;
+    width: 60px;
+    height: 60px;
+}
+.cart_product_list{
+    vertical-align: middle;
+}
+.cart_table thead{
+    background-color: rgb(46, 40, 36);
+}
+.cart_table thead th{
+    letter-spacing:2px;
+    font-weight:400;
+}
+.remove_btn{
+    background-color:transparent !important;
+}
