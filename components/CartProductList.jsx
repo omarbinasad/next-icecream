@@ -25,7 +25,7 @@ const CartProductList = ({ product }) => {
   return (
     <>
       <tr className={styles.cart_product_list} key={product.id}>
-        <td scope="row">{product.id}</td>
+        {/* <td scope="row">{product.id}</td> */}
         <td>
           <div className={styles.image_container}>
             <Image

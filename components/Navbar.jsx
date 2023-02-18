@@ -67,13 +67,17 @@ const Navbar = () => {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
-              <li className="p-2 nav-item text-white">
-                <Link className=" active " aria-current="page" href="#">
+              <li className={`p-2 nav-item ${styles.nav_item}`}>
+                <Link
+                  className={`${styles.nav_link} active`}
+                  aria-current="page"
+                  href="/"
+                >
                   Home
                 </Link>
               </li>
-              <li className="p-2 nav-item text-white">
-                <Link className=" nav-link " href="#">
+              <li className={`p-2 nav-item ${styles.nav_item}`}>
+                <Link className={`${styles.nav_link} `} href="/shop">
                   Shop
                 </Link>
               </li>
@@ -123,17 +127,6 @@ const Navbar = () => {
         </div>
         <div className="offcanvas-body">
           <table className={`table mt-4 ${styles.cart_table}`}>
-            {/* <thead className=" text-white">
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Product</th>
-                <th scope="col">Name</th>
-                <th scope="col">Price</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Total</th>
-                <th scope="col"></th>
-              </tr>
-            </thead> */}
             <tbody>
               {cart.products.map((product) => (
                 <CartProductList key={product.id} product={product} />
@@ -142,7 +135,7 @@ const Navbar = () => {
           </table>
         </div>
         <div className="offcanvas-footer p-2 ">
-        <h5 className="text-center">Total {cart.products.length} products</h5>
+          <h5 className="text-center">Total {cart.products.length} products</h5>
           <Link className="" href="/cart">
             <button
               type="button"

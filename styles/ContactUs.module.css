@@ -9,7 +9,8 @@
   
   .contact_box {
     /* width: clamp(100px, 90%, 1000px); */
-    margin: 80px 50px;
+    margin-top: 80px ;
+    margin-bottom: 80px ;
     display: flex;
     flex-wrap: wrap;
   }
