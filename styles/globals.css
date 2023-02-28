@@ -236,3 +236,18 @@ a {
 }
 
 /* contact section css  */
+
+
+/* Shop page > sortFilter components css */
+.sortFilter_bar{
+  padding: 20px 10px;
+}
+.nav-pills .nav-link, .nav-pills .show>.nav-link{
+  border-color: transparent;
+  border-radius: 0;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: transparent;
+  border-bottom: 2px solid red;
+  border-radius: 0;
+}
